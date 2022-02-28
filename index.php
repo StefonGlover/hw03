@@ -7,7 +7,16 @@
     <title>PHP Functions and Arrays</title>
     <link rel="stylesheet" href="stylesheet.css">
 
+    <!--Functions-->
     <?php 
+     function isBitten(){
+        if(random_int(1,2) == 1){
+            echo "Charlie ate my lunch!";
+        }
+        else {
+            echo "Charlie did not eat my lunch!";
+        }
+    }
 
         function forSort($array){
             sort($array);
@@ -46,7 +55,6 @@
                     echo "</td>";
 
                     echo "<td>";
-                    
                     echo "$".$v;
                     echo "</td>";
 
@@ -89,15 +97,6 @@
     
         echo "<h1>Part 1: Charlie</h1>";
         isBitten();
-
-        function isBitten(){
-            if(random_int(1,2) == 1){
-                echo "Charlie ate my lunch!";
-            }
-            else {
-                echo "Charlie did not eat my lunch!";
-            }
-        }
     ?>
 
     <h1>Part 2: Checkerboard</h1>
@@ -133,7 +132,6 @@
 
             echo "<h3>Sorted</h3>";
             forSort($month);
-           
       ?>
     
     <h2>Using Foreach</h2>
